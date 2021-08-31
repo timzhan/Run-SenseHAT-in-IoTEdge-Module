@@ -1,0 +1,29 @@
+FROM arm32v7/python:3.7-slim-buster
+
+WORKDIR /app
+
+# Update package index and install python
+RUN apt-get update
+RUN apt-get install -y \
+    python3 \
+    python3-dev \
+    python3-pip
+
+# Install Python packages
+COPY requirements.txt ./
+RUN pip3 install --upgrade pip 
+RUN pip3 install --upgrade setuptools 
+RUN pip3 install --index-url=https://www.piwheels.org/simple -r requirements.txt
+
+# Install dependencies to use sense-hat
+RUN apt-get install -y \
+    libatlas-base-dev \
+    libjpeg62 \
+    libopenjp2-7 \
+    libtiff-tools \
+    i2c-tools \
+    libxcb1
+
+COPY . .
+
+CMD [ "python3", "-u", "./main.py" ]

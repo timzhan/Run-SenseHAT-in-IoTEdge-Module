@@ -1,0 +1,4 @@
+azure-iot-device~=2.7.0
+numpy==1.18.3
+rtimulib
+sense-hat==2.2.0
