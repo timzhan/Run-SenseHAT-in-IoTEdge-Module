@@ -4,7 +4,7 @@
 
 The Sense HAT is a great add-on board for Raspberry Pi 3 and 4, made especially for the Astro Pi mission. It comes with an `8x8 RGB LED matrix` and some sensors including `temperature`, `humidity` and `barometric pressure` which are widely used in IoT scenarios. 
 
-<img src="images/SenseHat.png" width=30%>
+<img src="images/SenseHat.png" width=35%>
 
 Raspberry Pi officially created a **Python library** providing easy access to everything on the board. However, some developers are looking for running it in a docker container and especially working with Azure IoT Edge platform. 
 
