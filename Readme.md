@@ -4,7 +4,7 @@
 
 The Sense HAT is a great add-on board for Raspberry Pi 3 and 4, made especially for the Astro Pi mission. It comes with an `8x8 RGB LED matrix` and some sensors including `temperature`, `humidity` and `barometric pressure` which are widely used in IoT scenarios. 
 
-<img src='images/SenseHat.png' width=50%>
+<img src="images/SenseHat.png" width=30%>
 
 Raspberry Pi officially created a **Python library** providing easy access to everything on the board. However, some developers are looking for running it in a docker container and especially working with Azure IoT Edge platform. 
 
@@ -36,7 +36,7 @@ Please be noted that this sample is **NOT** for production use.
 
 Once assembled, it shall look like this:
 
-<img src='images/SenseHat-RPi4.png' width=50%>
+<img src="images/SenseHat-RPi4.png" width=40%>
 
 
 ### 2.3 Create a new Azure IoT Edge Solution on VS Code
@@ -116,11 +116,11 @@ While the module is running, you may use Azure IoT Explorer to view the logs:
 
 On RPi4, you may also see the Microsoft Logo displayed while sending the message.
 
-<img src="images/msft-logo.png" width=50%>
+<img src="images/msft-logo.png" width=40%>
 
 Once sending is completed, you may see the smile face shown up for 5 seconds.
 
-<img src="images/smile-face.png" width=50%>
+<img src="images/smile-face.png" width=40%>
 
 #
 
