@@ -36,7 +36,7 @@ Please be noted that this sample is **NOT** for production use.
 
 Once assembled, it shall look like this:
 
-<img src="images/Sensehat-RPi4.png" width=40%>
+<img src="images/SenseHat_RPi4.png" width=40%>
 
 ### 2.3 Create a new Azure IoT Edge Solution on VS Code
 
