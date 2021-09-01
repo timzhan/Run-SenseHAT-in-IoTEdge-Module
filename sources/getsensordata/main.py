@@ -1,7 +1,7 @@
 ######################################################################################
 # This sample is to run Sense HAT in IoT Edge Module
 # it shows Microsoft Logo while sending SenseHAT data to Azure IoT Hub
-# It shows a smileface when sending is completed.
+# It shows a smileface when sending is completed
 
 # v0.1
 # by tz
@@ -14,14 +14,12 @@ import asyncio
 from azure.iot.device.aio import IoTHubModuleClient
 from azure.iot.device import Message
 
-
-
 # Add the device connection string
 # Use Azure Global
 # CONNECTION_STRING = 'HostName=iothub-0707.azure-devices.net;DeviceId=RPI4-02;SharedAccessKey=UuZ************************qk='
 
 # Use Azure China
-CONNECTION_STRING = "HostName=iothub-0713.azure-devices.cn;DeviceId=RPI4-02;SharedAccessKey=pPc*************************RVE="
+CONNECTION_STRING = "HostName=iothub-0713.azure-devices.cn;DeviceId=RPI4-02;SharedAccessKey=pPc11sjBWpmn/K+0LwmX1Rb8EbsZtVQcI3StfaWoRVE="
 
 # Define message format
 MSG_TXT = '{{"Temperature":{t}, "Humidity":{h}, "Pressure":{p}}}'
@@ -65,7 +63,7 @@ microsoft_logo = [
 s = SenseHat()
 
 # Display a smile face
-def draw_smileface():
+async def draw_smileface():
    s.clear() 
    #--------------------------------
    # Draw eyes
@@ -98,7 +96,7 @@ def draw_smileface():
    #---------------------------------
 
 # Initialize senseHAT
-def init_SenseHat():
+async def init_SenseHat():
     # clear the display
     s.clear()
 
@@ -132,9 +130,8 @@ async def sensehat_send_telemetry(client):
 async def main():
 
     # init SenseHAT
-    module_client = init_SenseHat()
+    module_client = await init_SenseHat()
     print('SenseHAT is sending periodic messages, press Ctr-C to exit')
-
 
     # Connect the client
     await module_client.connect()
@@ -146,7 +143,7 @@ async def main():
     await module_client.disconnect()
 
     # display smileface
-    draw_smileface()
+    await draw_smileface()
 
 
 
