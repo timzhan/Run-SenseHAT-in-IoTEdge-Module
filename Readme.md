@@ -117,9 +117,13 @@ On RPi4, you may also see the Microsoft Logo displayed while sending the message
 
 <img src="images/msft-logo.png" width=40%>
 
+<img src="images/msft-logo-day.png" width=40%>
+
 Once sending is completed, you may see the smile face shown up for 5 seconds.
 
 <img src="images/smile-face.png" width=40%>
+<img src="images/smile-face-day.png" width=40%>
+
 
 #
 

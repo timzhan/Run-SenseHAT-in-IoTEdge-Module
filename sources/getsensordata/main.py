@@ -121,9 +121,9 @@ async def sensehat_send_telemetry(client):
             msg_txt_formatted = MSG_TXT.format(t=temperature, h=humidity, p=pressure)
             message = Message(msg_txt_formatted)
 
-            print(f'Sending message # {num_of_messages}: {message}')
+            print(f'Sending message # {i}: {message}')
             await client.send_message(message)
-            print(f'Message # {num_of_messages} sent successfully')
+            print(f'Message # {i} sent successfully')
             sleep(send_interval)
 
     except KeyboardInterrupt:
