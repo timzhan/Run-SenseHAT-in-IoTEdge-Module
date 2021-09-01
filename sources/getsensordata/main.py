@@ -3,7 +3,7 @@
 # it shows Microsoft Logo while sending SenseHAT data to Azure IoT Hub
 # It shows a smileface when sending is completed
 
-# v0.1
+# v0.2
 # by tz
 ######################################################################################
 
