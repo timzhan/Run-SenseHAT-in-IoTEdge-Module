@@ -38,7 +38,6 @@ Once assembled, it shall look like this:
 
 <img src="images/SenseHat-RPi4.png" width=40%>
 
-
 ### 2.3 Create a new Azure IoT Edge Solution on VS Code
 
 You may follow this [tutorial](https://docs.microsoft.com/en-in/azure/iot-edge/tutorial-python-module?view=iotedge-2020-11) if you are new to Azure IoT Edge.
