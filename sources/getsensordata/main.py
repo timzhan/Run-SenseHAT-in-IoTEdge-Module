@@ -19,7 +19,7 @@ from azure.iot.device import Message
 # CONNECTION_STRING = 'HostName=iothub-0707.azure-devices.net;DeviceId=RPI4-02;SharedAccessKey=UuZ************************qk='
 
 # Use Azure China
-CONNECTION_STRING = "HostName=iothub-0713.azure-devices.cn;DeviceId=RPI4-02;SharedAccessKey=pPc11sjBWpmn/K+0LwmX1Rb8EbsZtVQcI3StfaWoRVE="
+CONNECTION_STRING = "HostName=iothub-0713.azure-devices.cn;DeviceId=RPI4-02;SharedAccessKey=pPc**************************RVE="
 
 # Define message format
 MSG_TXT = '{{"Temperature":{t}, "Humidity":{h}, "Pressure":{p}}}'
